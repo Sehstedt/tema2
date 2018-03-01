@@ -35,6 +35,9 @@
     <!-- link til fontawesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+    <!--- fonte----->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand" rel="stylesheet">
+
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,22 +48,22 @@
 <!---------------Header------------------------------>
 <header>
     <div id="logodel">
-        <a href="#"><img src="images/header_mobil.png" class="mobil" alt="logo og logotype til mobilversionen"></a>
-        <a href="#"><img src="images/headerweb.png" class="web" alt="logo og logotype til webversionen"></a>
+        <a href="#"><img src="images/header_mobil.png" class="mobil" id="mobilheader" alt="logo og logotype til mobilversionen"></a>
+        <a href="#"><img src="images/headerweb.png" class="web" id="webheader" alt="logo og logotype til webversionen"></a>
     </div>
     <nav class="web">
         <ul>
             <li><a href="#"> FORSIDE</a></li>
             <li><a href="#"> PRODUKTER</a></li>
             <li><a href="#"> OM OS</a></li>
-            <li><a href="#"> INSPIRATION</a></li>
+            <li><a href="#" class="active"> INSPIRATION</a></li>
             <li><a href="#"> KONTAKT</a></li>
             <li><a href="#"> BESØG OS</a></li>
         </ul>
     </nav>
 
-    <i class="fas fa-search fa-3x mobil"></i>
-    <i class="fas fa-bars fa-3x mobil"></i>
+    <i class="fas fa-search fa-2x mobil" id="search"></i>
+    <i class="fas fa-bars fa-2x mobil" id="bars"></i>
 </header>
 <!---------------Header------------------------------>
 
@@ -74,7 +77,7 @@
         <p>
             Tlf: +45 55 55 55 55
             <br>
-            Email: Dominio@depontas.com
+            E-mail: Dominio@depontas.com
         </p>
     </div>
 
@@ -89,14 +92,16 @@
     </div>
     <div class=" footercontent">
         <h5>Find os her</h5>
-        <div class="facebook">
-            <i class="fab fa-facebook"></i>
-            <p class="mobil">Facebook</p>
-        </div>
+        <div id="some">
+            <div class="facebook">
+                <i class="fab fa-facebook fa-2x"></i>
+                <p class="web">Facebook</p>
+            </div>
 
-        <div class="instagram">
-            <i class="fab fa-instagram"></i>
-            <p class="mobil">Instagram</p>
+            <div class="instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+                <p class="web">Instagram</p>
+            </div>
         </div>
     </div>
 </footer>

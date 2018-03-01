@@ -7,11 +7,15 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+  font-family: 'Cormorant Garamond', serif;
 }
 
 ul, ol {
@@ -36,21 +40,139 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
+$backgroundbrown: rgba(150, 122, 108, 0.2);
+
+
+
+
+
+
+
+
+// -----------------Mobil------------------------
+
+
+
+
+// -----------------Header------------------------   
+.web{
+  display: none;
+}
+#mobilheader{
+  padding: 5% 10%;
+  width: 100%;
+}
+#search, #bars{
+  margin: 0 15% 5% 15%;
+}
+#bars{
+  float: right;
+}
+ // -----------------Header------------------------
+
+
+
+
+
+
+// -----------------Footer------------------------
+  footer{
+    background-color:$backgroundbrown;
+    border-top: solid black 3px;
+    h5{
+      font-size: 20pt;
+    }
+    p{
+      font-size: 16pt;
+    }
+  }
+
+  .footercontent{
+    text-align: center;
+    margin: 8% 0;
+  }
+#some{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.facebook, .instagram{
+  margin: 2% 5%;
+}
+
+// -----------------Footer------------------------
+
+
+
+
+
+
+
+
+
+
+
+// -----------------Mobil------------------------
+
+
+
+
+
+
+
+
 // Variabler - med størrelser
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+   //------------------------------ header til tablet  
+  .web{
+    display: block;
+  }
+  .mobil{
+    display: none;
+  }
 
+  ul{
+    list-style-type: none;
+    flex-direction: row;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5% 5% 5%;
+    font-size: 12pt;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      border: solid 2px $backgroundbrown;
+      padding: 2px;
+    }
+    .active{
+     border: solid 2px black;
+    padding: 2px;
+    }
+  }
 }
+
+ //------------------------------ header til tablet
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  ul{
+    font-size: 14pt;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
-
+  ul{
+}   font-size: 18pt;
+  }
 @media print {
   // Alt der gælder for print specifikt
 }
