@@ -51,7 +51,14 @@ $buttoncolor: #c9283e;
 }
 
 @mixin button{
-
+  background-color: $buttoncolor;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 16pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
 }
 
 
@@ -103,10 +110,6 @@ $buttoncolor: #c9283e;
 
 
 // -----------------Nairis css------------------------
-
-
-
-
 
 
 
