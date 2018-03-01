@@ -98,6 +98,10 @@ $brown: #977a6d;
   .footercontent{
     text-align: center;
     margin: 8% 0;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
 #some{
   @include flex;
@@ -181,6 +185,18 @@ $brown: #977a6d;
 
   .footercontent {
     margin: 0;
+    h5 {
+      font-size: 20pt;
+      color: white;
+      background-color: $brown;
+      padding: 10px 20px;
+      width: 215px;
+      margin: 5%;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 
   #some{
@@ -195,19 +211,6 @@ $brown: #977a6d;
       }
     
   }
-  
-  h5 {
-     font-size: 30pt;
-     color: white;
-     background-color: $brown;
-     padding: 10px 20px;
-     width: 215px;
-     margin: 5%;
-    a{
-      text-decoration: none;
-      color: white;
-    }
-   }
 
   
   //------------------------------ footer til tablet

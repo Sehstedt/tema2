@@ -53,6 +53,9 @@ footer {
 .footercontent {
   text-align: center;
   margin: 8% 0; }
+  .footercontent a {
+    text-decoration: none;
+    color: black; }
 
 #some {
   display: flex;
@@ -99,6 +102,16 @@ footer {
 
   .footercontent {
     margin: 0; }
+    .footercontent h5 {
+      font-size: 20pt;
+      color: white;
+      background-color: #977a6d;
+      padding: 10px 20px;
+      width: 215px;
+      margin: 5%; }
+      .footercontent h5 a {
+        text-decoration: none;
+        color: white; }
 
   #some {
     display: flex;
@@ -110,18 +123,7 @@ footer {
       flex-direction: row;
       display: flex;
       display: -webkit-flex;
-      justify-content: space-between; }
-
-  h5 {
-    font-size: 30pt;
-    color: white;
-    background-color: #977a6d;
-    padding: 10px 20px;
-    width: 215px;
-    margin: 5%; }
-    h5 a {
-      text-decoration: none;
-      color: white; } }
+      justify-content: space-between; } }
 @media screen and (min-width: 992px) {
   ul {
     font-size: 14pt; } }
