@@ -32,6 +32,12 @@
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/dominiodepontas.css" rel="stylesheet" type="text/css">
 
+    <!-- link til fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!--- fonte----->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand" rel="stylesheet">
+
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,5 +45,73 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<!---------------Header------------------------------>
+<header>
+    <div id="logodel">
+        <a href="#"><img src="images/header_mobil.png" class="mobil" id="mobilheader" alt="logo og logotype til mobilversionen"></a>
+        <a href="#"><img src="images/headerweb.png" class="web" id="webheader" alt="logo og logotype til webversionen"></a>
+    </div>
+    <nav class="web">
+        <ul>
+            <li><a href="#"> FORSIDE</a></li>
+            <li><a href="#"> PRODUKTER</a></li>
+            <li><a href="#"> OM OS</a></li>
+            <li><a href="#" class="active"> INSPIRATION</a></li>
+            <li><a href="#"> KONTAKT</a></li>
+            <li><a href="#"> BESØG OS</a></li>
+        </ul>
+    </nav>
+
+    <i class="fas fa-search fa-2x mobil" id="search"></i>
+    <i class="fas fa-bars fa-2x mobil" id="bars"></i>
+</header>
+<!---------------Header------------------------------>
+
+
+
+
+<!---------------Footer------------------------------>
+<footer>
+    <div class=" footercontent">
+        <h5> <a href="#"> Kontakt os</a></h5>
+        <p>
+            Tlf: + 45 55 55 55 55
+            <br>
+            E-mail: Dominio@depontas.com
+        </p>
+    </div>
+
+    <div class=" footercontent">
+        <h5> <a href="#"> Adresse</a></h5>
+        <p>
+            Calle de vino 6
+            <br>
+            Navarra, Spanien
+        </p>
+
+    </div>
+    <div class=" footercontent">
+        <h5>Find os her</h5>
+        <div id="some">
+            <div class="facebook">
+                <a href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <p class="web">Facebook</p>
+                </a>
+            </div>
+
+            <div class="instagram">
+                <a href="#">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <p class="web">Instagram</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!---------------Footer------------------------------>
+
+
 </body>
 </html>

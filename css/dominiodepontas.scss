@@ -43,13 +43,16 @@ img {
 
 $backgroundbrown: rgba(150, 122, 108, 0.2);
 $brown: #977a6d;
+$buttoncolor: #c9283e;
 
 @mixin flex{
   display: flex;
   display: -webkit-flex;
 }
 
+@mixin button{
 
+}
 
 
 
@@ -77,6 +80,9 @@ $brown: #977a6d;
 }
 
  // -----------------Header------------------------
+
+
+
 
 
 
