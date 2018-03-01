@@ -42,6 +42,12 @@ img {
 
 
 $backgroundbrown: rgba(150, 122, 108, 0.2);
+$brown: #977a6d;
+
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+}
 
 
 
@@ -55,7 +61,7 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
 
 
 
-// -----------------Header------------------------   
+// -----------------Header------------------------
 .web{
   display: none;
 }
@@ -69,6 +75,7 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
 #bars{
   float: right;
 }
+
  // -----------------Header------------------------
 
 
@@ -93,8 +100,7 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
     margin: 8% 0;
   }
 #some{
-  display: flex;
-  display: -webkit-flex;
+  @include flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -127,6 +133,7 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  //----------------------------- Tablet
    //------------------------------ header til tablet  
   .web{
     display: block;
@@ -138,8 +145,7 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
   ul{
     list-style-type: none;
     flex-direction: row;
-    display: -webkit-flex;
-    display: flex;
+    @include flex;
     justify-content: space-between;
     margin: 2% 5% 5% 5%;
     font-size: 12pt;
@@ -156,9 +162,87 @@ $backgroundbrown: rgba(150, 122, 108, 0.2);
     padding: 2px;
     }
   }
+ //------------------------------ header til tablet    
+
+
+
+
+
+  //------------------------------ footer til tablet  
+   footer{
+     @include flex;
+     justify-content: space-around;
+     padding: 2%;
+     p{
+       width: 200px;
+       font-size: 15pt;
+     }
+   }
+
+  .footercontent {
+    margin: 0;
+  }
+
+  #some{
+    @include flex;
+    flex-direction: column;
+      a {                             
+        text-decoration: none;        
+        color: black;                 
+        flex-direction: row;
+        @include flex;                      
+        justify-content: space-between;
+      }
+    
+  }
+  
+  h5 {
+     font-size: 30pt;
+     color: white;
+     background-color: $brown;
+     padding: 10px 20px;
+     width: 215px;
+     margin: 5%;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+   }
+
+  
+  //------------------------------ footer til tablet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
 
- //------------------------------ header til tablet
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
