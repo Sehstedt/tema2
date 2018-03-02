@@ -91,7 +91,23 @@ $buttoncolor: #c9283e;
 
 
 // -----------------Christinas css------------------------
+.forsidesection{
+  margin-bottom:50px;
+}
 
+.tekstboksforside {
+  background-color: $backgroundbrown;
+  padding: 10px;
+}
+
+.flasketekstboks{
+  background-color: $backgroundbrown;
+  padding: 10px;
+}
+
+.knapforside{
+  @include button;
+}
 
 // -----------------Christinas css------------------------
 
@@ -287,6 +303,44 @@ $buttoncolor: #c9283e;
   }
 
   // -----------------Christinas css------------------------
+  .flexforside{
+    @include flex;
+    flex-direction: row;
+  }
+
+  .relativboks{
+    position: relative;
+  }
+
+  .absoluteboks{
+    position: absolute;
+    right: 0;
+  }
+  .forsideflaske{
+    max-height: 1100px;
+  }
+
+  .flasketekstboks{
+    margin-top: -600px;
+    max-width: 240px;
+  }
+
+  .gaardsection{
+    margin-bottom: 161px;
+  }
+
+  .tekstboksforside{
+    p{
+      max-width: 500px;
+    }
+  }
+
+  .pagewrap{
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  //989px høj
 
 
   // -----------------Christinas css------------------------

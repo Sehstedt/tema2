@@ -42,10 +42,26 @@ img {
 #bars {
   float: right; }
 
-.flex {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-around; }
+.forsidesection {
+  margin-bottom: 50px; }
+
+.tekstboksforside {
+  background-color: rgba(150, 122, 108, 0.2);
+  padding: 10px; }
+
+.flasketekstboks {
+  background-color: rgba(150, 122, 108, 0.2);
+  padding: 10px; }
+
+.knapforside {
+  background-color: #c9283e;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 16pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px; }
 
 footer {
   background-color: rgba(150, 122, 108, 0.2);
@@ -134,6 +150,35 @@ footer {
     font-size: 14pt; } }
 @media screen and (min-width: 1200px) {
   ul {
-    font-size: 18pt; } }
+    font-size: 18pt; }
+
+  .flexforside {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row; }
+
+  .relativboks {
+    position: relative; }
+
+  .absoluteboks {
+    position: absolute;
+    right: 0; }
+
+  .forsideflaske {
+    max-height: 1100px; }
+
+  .flasketekstboks {
+    margin-top: -600px;
+    max-width: 240px; }
+
+  .gaardsection {
+    margin-bottom: 161px; }
+
+  .tekstboksforside p {
+    max-width: 500px; }
+
+  .pagewrap {
+    margin: auto;
+    max-width: 1200px; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */

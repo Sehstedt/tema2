@@ -46,69 +46,137 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <!---------------Header------------------------------>
-<header>
-    <div id="logodel">
-        <a href="#"><img src="images/header_mobil.png" class="mobil" id="mobilheader" alt="logo og logotype til mobilversionen"></a>
-        <a href="#"><img src="images/headerweb.png" class="web" id="webheader" alt="logo og logotype til webversionen"></a>
-    </div>
-    <nav class="web">
-        <ul>
-            <li><a href="#"> FORSIDE</a></li>
-            <li><a href="#"> PRODUKTER</a></li>
-            <li><a href="#"> OM OS</a></li>
-            <li><a href="#" class="active"> INSPIRATION</a></li>
-            <li><a href="#"> KONTAKT</a></li>
-            <li><a href="#"> BESØG OS</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div id="logodel">
+            <a href="#"><img src="images/header_mobil.png" class="mobil" id="mobilheader" alt="logo og logotype til mobilversionen"></a>
+            <a href="#"><img src="images/headerweb.png" class="web" id="webheader" alt="logo og logotype til webversionen"></a>
+        </div>
+        <nav class="web">
+            <ul>
+                <li><a href="#" class="active"> FORSIDE</a></li>
+                <li><a href="produkter.html"> PRODUKTER</a></li>
+                <li><a href="#"> OM OS</a></li>
+                <li><a href="inspiration.html"> INSPIRATION</a></li>
+                <li><a href="#"> KONTAKT</a></li>
+                <li><a href="#"> BESØG OS</a></li>
+            </ul>
+        </nav>
 
-    <i class="fas fa-search fa-2x mobil" id="search"></i>
-    <i class="fas fa-bars fa-2x mobil" id="bars"></i>
-</header>
-<!---------------Header------------------------------>
-
-
+        <i class="fas fa-search fa-2x mobil" id="search"></i>
+        <i class="fas fa-bars fa-2x mobil" id="bars"></i>
+    </header>
+    <!---------------Header------------------------------>
 
 
-<!---------------Footer------------------------------>
-<footer>
-    <div class=" footercontent">
-        <h5> <a href="#"> Kontakt os</a></h5>
-        <p>
-            Tlf: + 45 55 55 55 55
-            <br>
-            E-mail: Dominio@depontas.com
-        </p>
-    </div>
-
-    <div class=" footercontent">
-        <h5> <a href="#"> Adresse</a></h5>
-        <p>
-            Calle de vino 6
-            <br>
-            Navarra, Spanien
-        </p>
-
-    </div>
-    <div class=" footercontent">
-        <h5>Find os her</h5>
-        <div id="some">
-            <div class="facebook">
-                <a href="#">
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <p class="web">Facebook</p>
-                </a>
+    <!---------------Indhold------------------------------>
+    <main class="pagewrap">
+        <section class="forsidesection flexforside">
+            <div class="tekstboksforside">
+                <h1>Vores ving&aring;rd</h1>
+                <p>
+                    Vi fra Dominio de Pontas g&aring;r h&oslash;jt op i vores vine,
+                    s&aring; vi kan give dig den bedste oplevelse med p&aring; vejen.
+                    Ving&aring;rden i Spaniens smukke nordlige Navarra byder p&aring;
+                    en rig historie og sp&aelig;ndende kultur.
+                </p>
+                <button class="knapforside">L&aelig;s mere om os her</button>
             </div>
+            <img src="images/vindruertilweb.jpg">
+        </section>
 
-            <div class="instagram">
-                <a href="#">
-                    <i class="fab fa-instagram fa-2x"></i>
-                    <p class="web">Instagram</p>
-                </a>
+        <div class="relativboks">
+            <section class="forsidesection absoluteboks">
+                <img src="images/flatdesign_bottletilweb.png" class="web forsideflaske">
+                <img src="images/flatdesign_bottletilwebmobil.png" class="mobil">
+                <div class="flasketekstboks">
+                    <h2>Vin til din nydelse</h2>
+                    <p>
+                        Vi har et dejligt udvalg af vine til alles smage. Om du s&oslash;ger
+                        t&oslash;r eller s&oslash;d, har vi helt sikkert en god vin til dig.
+                    </p>
+                    <button class="knapforside">L&aelig;s mere om vores vine her</button>
+                </div>
+            </section>
+
+            <section class="forsidesection">
+                <img src="images/ostvindruetilweb.png">
+                <div class="tekstboksforside">
+                    <h2>Mangler du inspiration?</h2>
+                    <p>
+                        Se vores forslag til brug af vores vin, om det er til en dejlig,
+                        stille aften eller en st&oslash;rre begivenhed, har vi noget for dig.
+                        Bliv inspireret!
+                    </p>
+                    <button class="knapforside">F&aring; masser af inspiration her</button>
+                </div>
+            </section>
+
+            <section class="forsidesection gaardsection">
+                <img src="images/vingaardtilweb.png">
+                <div class="tekstboksforside">
+                    <h2>Bes&oslash;g vores smukke ving&aring;rd</h2>
+                    <p>
+                        Du er hjerteligt velkommen, skulle din vej passere Navarras smukke
+                        sletter. Vi har rundture og muligvis en smagspr&oslash;ve med p&aring; vejen.
+                    </p>
+                    <button class="knapforside">L&aelig;s hvordan du g&oslash;r her</button>
+                </div>
+            </section>
+        </div>
+
+        <section class="forsidesection">
+            <img src="images/vinflaskertilweb.jpg">
+            <div class="tekstboksforside">
+                <h2>Har du sp&oslash;rgsm&aring;l til os?</h2>
+                <p>
+                    Vi vil hellere end gerne svare p&aring; dine sp&oslash;rgsm&aring;l.
+                </p>
+                <button class="knapforside">Kontakt os her</button>
+            </div>
+        </section>
+    </main>
+
+    <!---------------Indhold------------------------------>
+
+    <!---------------Footer------------------------------>
+    <footer>
+        <div class=" footercontent">
+            <h5> <a href="#"> Kontakt os</a></h5>
+            <p>
+                Tlf: + 45 55 55 55 55
+                <br>
+                E-mail: Dominio@depontas.com
+            </p>
+        </div>
+
+        <div class=" footercontent">
+            <h5> <a href="#"> Adresse</a></h5>
+            <p>
+                Calle de vino 6
+                <br>
+                Navarra, Spanien
+            </p>
+
+        </div>
+        <div class=" footercontent">
+            <h5>Find os her</h5>
+            <div id="some">
+                <div class="facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <p class="web">Facebook</p>
+                    </a>
+                </div>
+
+                <div class="instagram">
+                    <a href="#">
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <p class="web">Instagram</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 <!---------------Footer------------------------------>
 
