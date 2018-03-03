@@ -42,10 +42,54 @@ img {
 #bars {
   float: right; }
 
-.flex {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-around; }
+h1 {
+  font-size: 36pt; }
+
+h2, h3 {
+  font-size: 28pt; }
+
+h4 {
+  font-size: 20pt; }
+
+p {
+  font-size: 16pt; }
+
+a {
+  text-decoration: none; }
+
+.bodyMargin {
+  padding: 20px; }
+
+button {
+  background-color: #c9283e;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 16pt;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  margin: 0; }
+  button:hover {
+    background-color: rgba(148, 84, 89, 0.7); }
+
+#heroPicProdukt {
+  width: 100%;
+  overflow: auto; }
+
+#infoProdukter a {
+  color: #c9283e; }
+  #infoProdukter a:hover {
+    color: rgba(148, 84, 89, 0.7); }
+
+.spaceBelow {
+  margin-bottom: 20px; }
+
+.centreret {
+  text-align: center; }
+
+.logoProdukter {
+  margin: 0 auto 20px auto; }
 
 footer {
   background-color: rgba(150, 122, 108, 0.2);

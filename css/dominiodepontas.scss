@@ -44,6 +44,7 @@ img {
 $backgroundbrown: rgba(150, 122, 108, 0.2);
 $brown: #977a6d;
 $buttoncolor: #c9283e;
+$buttonhovercolor: rgba(148, 84, 89, 0.7);
 
 @mixin flex{
   display: flex;
@@ -59,6 +60,9 @@ $buttoncolor: #c9283e;
   border: none;
   cursor: pointer;
   margin: 10px;
+  &:hover{
+    background-color: $buttonhovercolor;
+  }
 }
 
 
@@ -88,6 +92,32 @@ $buttoncolor: #c9283e;
 
  // -----------------Header------------------------
 
+//------------------Fælles---------------------------
+
+h1{
+  font-size: 36pt;
+}
+
+h2, h3{
+  font-size: 28pt;
+}
+
+h4{
+  font-size: 20pt;
+}
+
+p{
+  font-size: 16pt;
+}
+
+a{
+  text-decoration: none;
+}
+
+//-----------------Fælles-------------------------------
+
+
+
 
 
 // -----------------Christinas css------------------------
@@ -99,7 +129,40 @@ $buttoncolor: #c9283e;
 
 
 // -----------------Carolines css------------------------
+.bodyMargin{
+  padding: 20px;
+}
 
+button{
+  @include button;
+  margin: 0;
+}
+
+#heroPicProdukt{
+  width: 100%;
+  overflow: auto;
+}
+
+#infoProdukter{
+  a{
+    color: $buttoncolor;
+    &:hover{
+      color: $buttonhovercolor;
+    }
+  }
+}
+
+.spaceBelow{
+  margin-bottom: 20px;
+}
+
+.centreret{
+  text-align: center;
+}
+
+.logoProdukter{
+  margin: 0 auto 20px auto;
+}
 
 // -----------------Carolines css------------------------
 
