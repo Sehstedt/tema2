@@ -44,7 +44,7 @@ img {
 $backgroundbrown: rgba(150, 122, 108, 0.2);
 $brown: #977a6d;
 $buttoncolor: #c9283e;
-$buttonhovercolor: rgba(148, 84, 89, 0.7);
+$buttonhovercolor: rgba(150, 122, 108, 0.2);
 
 @mixin flex{
   display: flex;
@@ -349,15 +349,91 @@ button{
    font-size: 18pt;
   }
 
-  // -----------------Christinas css------------------------
+  //------------------Fælles---------------------------
+
+  h1{
+    font-size: 70pt;
+  }
+
+  h2{
+    font-size: 36pt;
+  }
+
+  h3{
+    font-size: 30pt;
+  }
+
+  p{
+    font-size: 20pt;
+  }
+
+
+  //-----------------Fælles-------------------------------
 
 
   // -----------------Christinas css------------------------
 
 
+  // -----------------Christinas css------------------------
 
+  .spaceBelow{
+    margin-bottom: 3%;
+  }
+
+  .bodyMargin{
+    margin: 5%;
+  }
+
+  .topProdukter, #infoProdukter{
+    background-color: $backgroundbrown;
+    padding: 3%;
+  }
+
+  #heroPicProdukt{
+    height: 400px;
+    object-fit: cover;
+  }
+
+
+  .partsInfoProdukt{
+    @include flex;
+    justify-content: space-around;
+  }
+
+  .secondPart{
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .imgCenterProdukter, .textCenterProdukter{
+    width: 50%;
+    height: 20%;
+  }
+
+  .textCenterProdukter{
+    margin-top: 100px;
+    h2{
+      text-align: left;
+    }
+  }
+
+  #druProGaa{
+    @include flex;
+    justify-content: space-around;
+    z-index: 1;
+    .produkt{
+      width: 275px;
+      text-align: center;
+    }
+  }
+
+
+  .bottlesProdukt{
+    position: relative;
+  }
 
   // -----------------Carolines css------------------------
+
 
 
   // -----------------Carolines css------------------------

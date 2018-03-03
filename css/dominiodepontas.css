@@ -71,7 +71,7 @@ button {
   margin: 10px;
   margin: 0; }
   button:hover {
-    background-color: rgba(148, 84, 89, 0.7); }
+    background-color: rgba(150, 122, 108, 0.2); }
 
 #heroPicProdukt {
   width: 100%;
@@ -80,7 +80,7 @@ button {
 #infoProdukter a {
   color: #c9283e; }
   #infoProdukter a:hover {
-    color: rgba(148, 84, 89, 0.7); }
+    color: rgba(150, 122, 108, 0.2); }
 
 .spaceBelow {
   margin-bottom: 20px; }
@@ -178,6 +178,62 @@ footer {
     font-size: 14pt; } }
 @media screen and (min-width: 1200px) {
   ul {
-    font-size: 18pt; } }
+    font-size: 18pt; }
+
+  h1 {
+    font-size: 70pt; }
+
+  h2 {
+    font-size: 36pt; }
+
+  h3 {
+    font-size: 30pt; }
+
+  p {
+    font-size: 20pt; }
+
+  .spaceBelow {
+    margin-bottom: 3%; }
+
+  .bodyMargin {
+    margin: 5%; }
+
+  .topProdukter, #infoProdukter {
+    background-color: rgba(150, 122, 108, 0.2);
+    padding: 3%; }
+
+  #heroPicProdukt {
+    height: 400px;
+    object-fit: cover; }
+
+  .partsInfoProdukt {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around; }
+
+  .secondPart {
+    flex-direction: row-reverse;
+    text-align: right; }
+
+  .imgCenterProdukter, .textCenterProdukter {
+    width: 50%;
+    height: 20%; }
+
+  .textCenterProdukter {
+    margin-top: 100px; }
+    .textCenterProdukter h2 {
+      text-align: left; }
+
+  #druProGaa {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    z-index: 1; }
+    #druProGaa .produkt {
+      width: 275px;
+      text-align: center; }
+
+  .bottlesProdukt {
+    position: relative; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */
