@@ -376,12 +376,20 @@ button{
 
   // -----------------Christinas css------------------------
 
+
+
+
+  
+  // -----------------Carolines css------------------------
+
   .spaceBelow{
     margin-bottom: 3%;
   }
 
   .bodyMargin{
     margin: 5%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .topProdukter, #infoProdukter{
@@ -418,22 +426,38 @@ button{
   }
 
   #druProGaa{
-    @include flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: absolute;
     z-index: 1;
+    width: 1100px;
     .produkt{
-      width: 275px;
+      width: 200px;
       text-align: center;
+      p{
+        font-size: 16pt;
+      }
     }
   }
 
+  #produktEt{
+    grid-column: 1/span 2;
+    margin-left: 42%;
+  }
+
+  #produktTo{
+    grid-column: 3/span 2;
+    margin-left: 21%;
+  }
+
+  #produktTre{
+    grid-column: 5/span 2;
+    float: left;
+  }
 
   .bottlesProdukt{
     position: relative;
   }
-
-  // -----------------Carolines css------------------------
-
 
 
   // -----------------Carolines css------------------------
