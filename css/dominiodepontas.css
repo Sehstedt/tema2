@@ -29,7 +29,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.web {
+.web, .KUNWEB {
   display: none; }
 
 #mobilheader {
@@ -55,7 +55,8 @@ p {
   font-size: 16pt; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #c9283e; }
 
 .bodyMargin {
   padding: 20px; }
@@ -140,6 +141,48 @@ footer {
       border: solid 2px black;
       padding: 2px; }
 
+  .spaceBelow {
+    margin-bottom: 3%; }
+
+  .bodyMargin {
+    width: 100%;
+    padding: 0; }
+
+  .topProdukter, #infoProdukter {
+    background-color: rgba(150, 122, 108, 0.2);
+    padding: 0 3% 3% 3%;
+    margin: 5% 10%; }
+
+  .topProdukter {
+    padding: 3%; }
+
+  #heroPicProdukt {
+    height: 500px;
+    object-fit: cover; }
+
+  .partsInfoProdukt {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around; }
+
+  .secondPart {
+    flex-direction: row-reverse;
+    text-align: right; }
+    .secondPart .hvidPro {
+      text-align: right; }
+
+  .imgCenterProdukter, .textCenterProdukter {
+    width: 50%;
+    height: 20%; }
+
+  .imgCenterProdukter {
+    margin-top: 135px; }
+
+  .textCenterProdukter {
+    margin-top: 92px; }
+    .textCenterProdukter h2 {
+      text-align: left; }
+
   footer {
     display: flex;
     display: -webkit-flex;
@@ -175,13 +218,70 @@ footer {
       justify-content: space-between; } }
 @media screen and (min-width: 992px) {
   ul {
-    font-size: 14pt; } }
+    font-size: 14pt; }
+
+  h1 {
+    font-size: 40pt; }
+
+  h2 {
+    font-size: 25pt; }
+
+  h3 {
+    font-size: 25pt; }
+
+  p {
+    font-size: 16pt; }
+
+  .imgCenterProdukter {
+    margin-top: 60px; }
+
+  #voresRaavarer {
+    margin-bottom: 5%; }
+
+  #druProGaa {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    z-index: 1;
+    position: absolute;
+    margin: -3.5% 13% 0 12%; }
+    #druProGaa .produkt {
+      text-align: center;
+      width: 175px; }
+      #druProGaa .produkt p {
+        font-size: 14pt; }
+      #druProGaa .produkt h3 {
+        font-size: 25pt;
+        margin-bottom: 5%; }
+    #druProGaa .bottlesProdukt {
+      grid-column: 1/span 6; }
+
+  #produktEt {
+    grid-column: 2/span 1; }
+
+  #produktTo {
+    grid-column: 4/span 1; }
+
+  #produktTre {
+    grid-column: 6/span 1; }
+    #produktTre button {
+      margin: auto; }
+
+  .bottlesProdukt {
+    position: relative;
+    width: 1250px;
+    margin: auto; } }
 @media screen and (min-width: 1200px) {
+  .KUNWEB {
+    display: block; }
+
+  .TABLET {
+    display: none; }
+
   ul {
     font-size: 18pt; }
 
   h1 {
-    font-size: 70pt; }
+    font-size: 50pt; }
 
   h2 {
     font-size: 36pt; }
@@ -192,65 +292,7 @@ footer {
   p {
     font-size: 20pt; }
 
-  .spaceBelow {
-    margin-bottom: 3%; }
-
-  .bodyMargin {
-    margin: 5%;
-    padding-bottom: 0;
-    margin-bottom: 0; }
-
-  .topProdukter, #infoProdukter {
-    background-color: rgba(150, 122, 108, 0.2);
-    padding: 3%; }
-
-  #heroPicProdukt {
-    height: 400px;
-    object-fit: cover; }
-
-  .partsInfoProdukt {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-around; }
-
-  .secondPart {
-    flex-direction: row-reverse;
-    text-align: right; }
-
-  .imgCenterProdukter, .textCenterProdukter {
-    width: 50%;
-    height: 20%; }
-
-  .textCenterProdukter {
-    margin-top: 100px; }
-    .textCenterProdukter h2 {
-      text-align: left; }
-
-  #druProGaa {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    position: absolute;
-    z-index: 1;
-    width: 1100px; }
-    #druProGaa .produkt {
-      width: 200px;
-      text-align: center; }
-      #druProGaa .produkt p {
-        font-size: 16pt; }
-
-  #produktEt {
-    grid-column: 1/span 2;
-    margin-left: 42%; }
-
-  #produktTo {
-    grid-column: 3/span 2;
-    margin-left: 21%; }
-
-  #produktTre {
-    grid-column: 5/span 2;
-    float: left; }
-
-  .bottlesProdukt {
-    position: relative; } }
+  .imgCenterProdukter {
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */
