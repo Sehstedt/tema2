@@ -57,6 +57,8 @@ p {
 a {
   text-decoration: none;
   color: #c9283e; }
+  a:hover {
+    color: rgba(150, 122, 108, 0.2); }
 
 .bodyMargin {
   padding: 20px; }
@@ -82,15 +84,14 @@ button {
   color: #c9283e; }
   #infoProdukter a:hover {
     color: rgba(150, 122, 108, 0.2); }
+#infoProdukter .imgCenterProdukter {
+  margin: auto; }
 
 .spaceBelow {
   margin-bottom: 20px; }
 
 .centreret {
   text-align: center; }
-
-.imgCenterProdukter {
-  margin: 0 auto 20px auto; }
 
 footer {
   background-color: rgba(150, 122, 108, 0.2);
@@ -150,11 +151,8 @@ footer {
 
   .topProdukter, #infoProdukter {
     background-color: rgba(150, 122, 108, 0.2);
-    padding: 0 3% 3% 3%;
+    padding: 3%;
     margin: 5% 10%; }
-
-  .topProdukter {
-    padding: 3%; }
 
   #heroPicProdukt {
     height: 500px;
@@ -163,7 +161,8 @@ footer {
   .partsInfoProdukt {
     display: flex;
     display: -webkit-flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: 20px 0; }
 
   .secondPart {
     flex-direction: row-reverse;
@@ -175,13 +174,8 @@ footer {
     width: 50%;
     height: 20%; }
 
-  .imgCenterProdukter {
-    margin-top: 135px; }
-
-  .textCenterProdukter {
-    margin-top: 92px; }
-    .textCenterProdukter h2 {
-      text-align: left; }
+  .textCenterProdukter h2 {
+    text-align: left; }
 
   footer {
     display: flex;
@@ -232,8 +226,8 @@ footer {
   p {
     font-size: 16pt; }
 
-  .imgCenterProdukter {
-    margin-top: 60px; }
+  .partsInfoProdukt {
+    margin: 40px 0; }
 
   #voresRaavarer {
     margin-bottom: 5%; }
@@ -292,7 +286,10 @@ footer {
   p {
     font-size: 20pt; }
 
-  .imgCenterProdukter {
-    margin-top: 50px; } }
+  .textCenterProdukter, .imgCenterProdukter {
+    float: bottom; }
+
+  .partsInfoProdukt {
+    margin: 60px; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */

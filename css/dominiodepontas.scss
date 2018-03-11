@@ -114,6 +114,9 @@ p{
 a{
   text-decoration: none;
   color: $buttoncolor;
+  &:hover{
+    color: $buttonhovercolor;
+  }
 }
 
 //-----------------Fælles-------------------------------
@@ -152,6 +155,9 @@ button{
       color: $buttonhovercolor;
     }
   }
+  .imgCenterProdukter{
+    margin: auto;
+  }
 }
 
 .spaceBelow{
@@ -160,10 +166,6 @@ button{
 
 .centreret{
   text-align: center;
-}
-
-.imgCenterProdukter{
-  margin: 0 auto 20px auto;
 }
 
 // -----------------Carolines css------------------------
@@ -280,13 +282,10 @@ button{
 
   .topProdukter, #infoProdukter{
     background-color: $backgroundbrown;
-    padding: 0 3% 3% 3%;
+    padding: 3%;
     margin: 5% 10%;
   }
 
-  .topProdukter{
-    padding: 3%;
-  }
 
   #heroPicProdukt{
     height: 500px;
@@ -297,6 +296,7 @@ button{
   .partsInfoProdukt{
     @include flex;
     justify-content: space-around;
+    margin: 20px 0;
   }
 
   .secondPart{
@@ -312,12 +312,7 @@ button{
     height: 20%;
   }
 
-  .imgCenterProdukter{
-    margin-top: 135px;
-  }
-
   .textCenterProdukter{
-    margin-top: 92px;
     h2{
       text-align: left;
     }
@@ -410,8 +405,9 @@ button{
 
   //--------------------Carolines css----------------
 
-  .imgCenterProdukter{
-    margin-top: 60px;
+
+  .partsInfoProdukt{
+    margin: 40px 0;
   }
 
   #voresRaavarer{
@@ -514,8 +510,12 @@ button{
 
   // -----------------Carolines css------------------------
 
-  .imgCenterProdukter{
-    margin-top: 50px;
+  .textCenterProdukter, .imgCenterProdukter{
+    float: bottom;
+  }
+
+  .partsInfoProdukt{
+    margin: 60px;
   }
 
   // -----------------Carolines css------------------------
