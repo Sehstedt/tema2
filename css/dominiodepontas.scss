@@ -155,18 +155,29 @@ button{
       color: $buttonhovercolor;
     }
   }
-  .imgCenterProdukter{
-    margin: auto;
-  }
 }
 
 .spaceBelow{
   margin-bottom: 20px;
 }
 
+.partsInfoProdukt{
+  margin-bottom: 30px;
+}
+
+.imgCenterProdukter{
+  margin: auto;
+}
+
 .centreret{
   text-align: center;
 }
+
+.clickBottle{
+  color: $buttoncolor;
+  cursor: pointer;
+}
+
 
 // -----------------Carolines css------------------------
 
@@ -286,12 +297,10 @@ button{
     margin: 5% 10%;
   }
 
-
   #heroPicProdukt{
     height: 500px;
     object-fit: cover;
   }
-
 
   .partsInfoProdukt{
     @include flex;
@@ -310,6 +319,7 @@ button{
   .imgCenterProdukter, .textCenterProdukter{
     width: 50%;
     height: 20%;
+    margin: 0 auto;
   }
 
   .textCenterProdukter{
@@ -317,6 +327,15 @@ button{
       text-align: left;
     }
   }
+
+  .tabletTekstPro{
+    margin: 0 10%;
+  }
+
+  .klikPro{
+    margin: 5% auto;
+  }
+
 
   //--------------------Carolines css------------------
 
@@ -405,13 +424,20 @@ button{
 
   //--------------------Carolines css----------------
 
+  .TABLET{
+    display: none;
+  }
+
+  .KUNWEB{
+    display: block;
+  }
 
   .partsInfoProdukt{
     margin: 40px 0;
   }
 
   #voresRaavarer{
-    margin-bottom: 5%;
+    margin-bottom: 13%;
   }
 
   #druProGaa{
@@ -419,7 +445,7 @@ button{
     grid-template-columns: repeat(7, 1fr);
     z-index: 1;
     position: absolute;
-    margin: -3.5% 13% 0 12%;
+    margin: -12% 6% 0 6%;
     .produkt{
       text-align: center;
       width: 175px;
@@ -451,6 +477,10 @@ button{
     }
   }
 
+  .tabletTekstPro{
+    margin: 0;
+  }
+
   .bottlesProdukt{
     position: relative;
     width: 1250px;
@@ -459,19 +489,29 @@ button{
 
   //--------------------Carolines css----------------
 
+}
+
+@media screen and (min-width: 1050px){
+
+  // -----------------Carolines css------------------------
+
+  #voresRaavarer{
+    margin-bottom: 7%;
+  }
+
+  #druProGaa{
+    margin-top: -6%;
+  }
+
+
+  // -----------------Carolines css------------------------
 
 }
+
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
-  .KUNWEB{
-    display: block;
-  }
-
-  .TABLET{
-    display: none;
-  }
 
   ul{
    font-size: 18pt;
@@ -518,6 +558,14 @@ button{
     margin: 60px;
   }
 
+  #voresRaavarer{
+    margin-bottom: 5%;
+  }
+
+  #druProGaa{
+    margin: -3.5% 7% 0 7%;
+  }
+
   // -----------------Carolines css------------------------
 
 
@@ -529,9 +577,20 @@ button{
 
   // -----------------Nairis css------------------------
 
+}
 
+@media screen and (min-width: 1450px){
+
+  // -----------------Carolines css------------------------
+
+  #druProGaa{
+    margin: -3.5% 12% 0 12%;
+  }
+
+  // -----------------Carolines css------------------------
 
 }
+
 @media print {
   // Alt der gælder for print specifikt
 }

@@ -84,14 +84,22 @@ button {
   color: #c9283e; }
   #infoProdukter a:hover {
     color: rgba(150, 122, 108, 0.2); }
-#infoProdukter .imgCenterProdukter {
-  margin: auto; }
 
 .spaceBelow {
   margin-bottom: 20px; }
 
+.partsInfoProdukt {
+  margin-bottom: 30px; }
+
+.imgCenterProdukter {
+  margin: auto; }
+
 .centreret {
   text-align: center; }
+
+.clickBottle {
+  color: #c9283e;
+  cursor: pointer; }
 
 footer {
   background-color: rgba(150, 122, 108, 0.2);
@@ -172,10 +180,17 @@ footer {
 
   .imgCenterProdukter, .textCenterProdukter {
     width: 50%;
-    height: 20%; }
+    height: 20%;
+    margin: 0 auto; }
 
   .textCenterProdukter h2 {
     text-align: left; }
+
+  .tabletTekstPro {
+    margin: 0 10%; }
+
+  .klikPro {
+    margin: 5% auto; }
 
   footer {
     display: flex;
@@ -226,18 +241,24 @@ footer {
   p {
     font-size: 16pt; }
 
+  .TABLET {
+    display: none; }
+
+  .KUNWEB {
+    display: block; }
+
   .partsInfoProdukt {
     margin: 40px 0; }
 
   #voresRaavarer {
-    margin-bottom: 5%; }
+    margin-bottom: 13%; }
 
   #druProGaa {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     z-index: 1;
     position: absolute;
-    margin: -3.5% 13% 0 12%; }
+    margin: -12% 6% 0 6%; }
     #druProGaa .produkt {
       text-align: center;
       width: 175px; }
@@ -260,17 +281,20 @@ footer {
     #produktTre button {
       margin: auto; }
 
+  .tabletTekstPro {
+    margin: 0; }
+
   .bottlesProdukt {
     position: relative;
     width: 1250px;
     margin: auto; } }
+@media screen and (min-width: 1050px) {
+  #voresRaavarer {
+    margin-bottom: 7%; }
+
+  #druProGaa {
+    margin-top: -6%; } }
 @media screen and (min-width: 1200px) {
-  .KUNWEB {
-    display: block; }
-
-  .TABLET {
-    display: none; }
-
   ul {
     font-size: 18pt; }
 
@@ -290,6 +314,15 @@ footer {
     float: bottom; }
 
   .partsInfoProdukt {
-    margin: 60px; } }
+    margin: 60px; }
+
+  #voresRaavarer {
+    margin-bottom: 5%; }
+
+  #druProGaa {
+    margin: -3.5% 7% 0 7%; } }
+@media screen and (min-width: 1450px) {
+  #druProGaa {
+    margin: -3.5% 12% 0 12%; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */
