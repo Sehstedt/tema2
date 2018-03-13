@@ -101,6 +101,17 @@ button {
   color: #c9283e;
   cursor: pointer; }
 
+#bottleJquery {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(150, 122, 108, 0.2);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
 footer {
   background-color: rgba(150, 122, 108, 0.2);
   border-top: solid black 3px; }
