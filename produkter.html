@@ -218,7 +218,8 @@
 </div>
 
 <div id="bottleJquery">
-    <img src="images/bottle_jquery.png">
+    <span class="fa fa-times fa-2x" id="closeBtnPro"></span>
+    <img src="images/bottle_jquery.png" id="bottleInfo">
 </div>
 
 <!---------------Footer------------------------------>
@@ -262,6 +263,22 @@
 </footer>
 
 <!---------------Footer------------------------------>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $(".clickBottle").click(function (e) {
+           $("#bottleJquery").fadeIn(500)
+        });
+
+        $("#bottleJquery").click(function (e) {
+            $("#bottleJquery").fadeOut(500)
+        });
+});
+</script>
+
 
 
 </body>
