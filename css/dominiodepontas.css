@@ -37,21 +37,49 @@ img {
   width: 100%; }
 
 #search, #bars {
-  margin: 0 15% 5% 15%; }
+  margin: 0 55% 5% 15%; }
+
+.elementer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row; }
 
 #bars {
-  float: right; }
+  right: 0; }
+
+.burgermenu {
+  position: absolute;
+  width: 100%; }
+
+ul {
+  list-style-type: none;
+  position: relative; }
+  ul a {
+    display: block;
+    background-color: #c9283e;
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px; }
+  ul a:hover {
+    color: rgba(150, 122, 108, 0.2); }
 
 .forsidesection {
   margin-bottom: 50px; }
 
 .tekstboksforside {
   background-color: rgba(150, 122, 108, 0.2);
-  padding: 10px; }
+  padding: 30px; }
+  .tekstboksforside p {
+    margin-bottom: 10px; }
 
 .flasketekstboks {
   background-color: rgba(150, 122, 108, 0.2);
-  padding: 10px; }
+  padding: 15px; }
+  .flasketekstboks p {
+    margin-bottom: 10px; }
 
 .knapforside {
   background-color: #c9283e;
@@ -62,6 +90,9 @@ img {
   border: none;
   cursor: pointer;
   margin: 10px; }
+
+.webflaske {
+  display: none; }
 
 footer {
   background-color: rgba(150, 122, 108, 0.2);
@@ -94,6 +125,11 @@ footer {
   .mobil {
     display: none; }
 
+  .burgermenu {
+    position: static;
+    width: auto;
+    margin: auto; }
+
   ul {
     list-style-type: none;
     flex-direction: row;
@@ -101,13 +137,21 @@ footer {
     display: -webkit-flex;
     justify-content: space-between;
     margin: 2% 5% 5% 5%;
-    font-size: 12pt; }
+    font-size: 12pt;
+    position: static; }
     ul a {
       text-decoration: none;
-      color: black; }
+      color: black;
+      background-color: #fff;
+      height: auto;
+      width: auto;
+      text-align: initial;
+      padding: 2px;
+      border: solid 2px #fff; }
     ul a:hover {
       border: solid 2px rgba(150, 122, 108, 0.2);
-      padding: 2px; }
+      padding: 2px;
+      color: #000; }
     ul .active {
       border: solid 2px black;
       padding: 2px; }
@@ -165,20 +209,26 @@ footer {
     right: 0; }
 
   .forsideflaske {
-    max-height: 1100px; }
+    max-height: 1300px; }
 
   .flasketekstboks {
-    margin-top: -600px;
-    max-width: 240px; }
+    margin: -700px 0 0 20px;
+    max-width: 260px; }
 
   .gaardsection {
-    margin-bottom: 161px; }
+    margin-bottom: 190px; }
 
   .tekstboksforside p {
     max-width: 500px; }
 
   .pagewrap {
     margin: auto;
-    max-width: 1200px; } }
+    max-width: 1280px; }
+
+  .webflaske {
+    display: block; }
+
+  .mobilflaske {
+    display: none; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */

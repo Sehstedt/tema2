@@ -51,7 +51,16 @@
             <a href="#"><img src="images/header_mobil.png" class="mobil" id="mobilheader" alt="logo og logotype til mobilversionen"></a>
             <a href="#"><img src="images/headerweb.png" class="web" id="webheader" alt="logo og logotype til webversionen"></a>
         </div>
-        <nav class="web">
+
+        <div class="elementer mobil">
+            <i class="fas fa-search fa-2x mobil" id="search"></i>
+            <div class="barelement mobil">
+                <i class="fas fa-bars fa-2x mobil" id="bars"></i>
+            </div>
+        </div>
+
+
+        <nav class="web burgermenu">
             <ul>
                 <li><a href="#" class="active"> FORSIDE</a></li>
                 <li><a href="produkter.html"> PRODUKTER</a></li>
@@ -62,10 +71,37 @@
             </ul>
         </nav>
 
-        <i class="fas fa-search fa-2x mobil" id="search"></i>
-        <i class="fas fa-bars fa-2x mobil" id="bars"></i>
     </header>
     <!---------------Header------------------------------>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            var navOpen = 0;
+
+            $(".barelement").click(function(e) {
+                if(navOpen == 1){
+                    $(".burgermenu").slideUp(500);
+                    navOpen = 0;
+                }else{
+                    $(".burgermenu").slideDown(600);
+                    navOpen = 1;
+                }
+            });
+
+            $(window).resize(function(e){
+                var width = $(window).width();
+
+                if(width > 767){
+                    $(".burgermenu").css("display", "block");
+                }else{
+                    $(".burgermenu").css("display", "none");
+                    navOpen = 0;
+                }
+            });
+
+        });
+    </script>
 
 
     <!---------------Indhold------------------------------>
@@ -81,13 +117,13 @@
                 </p>
                 <button class="knapforside">L&aelig;s mere om os her</button>
             </div>
-            <img src="images/vindruertilweb.jpg">
+            <img src="images/vindruertilweb2.jpg">
         </section>
 
         <div class="relativboks">
             <section class="forsidesection absoluteboks">
-                <img src="images/flatdesign_bottletilweb.png" class="web forsideflaske">
-                <img src="images/flatdesign_bottletilwebmobil.png" class="mobil">
+                <img src="images/flatdesign_bottletilweb.png" class="webflaske forsideflaske">
+                <img src="images/flatdesign_bottletilwebmobil.png" class="mobilflaske">
                 <div class="flasketekstboks">
                     <h2>Vin til din nydelse</h2>
                     <p>
