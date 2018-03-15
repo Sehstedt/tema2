@@ -75,92 +75,23 @@ $buttoncolor: #c9283e;
 .web{
   display: none;
 }
-
 #mobilheader{
   padding: 5% 10%;
   width: 100%;
 }
-.searchelement, .barelement{
-  margin: 0 40% 5% 15%;
-
+#search, #bars{
+  margin: 0 15% 5% 15%;
 }
-.elementer{
-  @include flex;
-  flex-direction: row;
+#bars{
+  float: right;
 }
-
-#inputsted{
-  display: none;
-  width: 100%;
-  height: 50px;
-  padding: 0 20px;
-  border: 2px solid $backgroundbrown;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  font-size: 12pt;
-}
-
 
  // -----------------Header------------------------
 
 
-//------------------Burgermenu for mobil--------------------------
-
-.burgermenu{
-  position: absolute;
-  width: 100%;
-}
-
-ul{
-  list-style-type: none;
-  position: relative;
-
-  a{
-    display: block;
-    background-color: $buttoncolor;
-    color: #fff;
-    height: 70px;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 20px;
-  }
-  a:hover{
-    color: $backgroundbrown;
-  }
-}
-//------------------Burgermenu for mobil--------------------------
-
-
 
 // -----------------Christinas css------------------------
-.forsidesection{//hele sektionerne på forsiden, billede og tekstboks
-  margin-bottom:50px;
-}
 
-.tekstboksforside {//tekstboksene på forsiden
-  background-color: $backgroundbrown;
-  padding: 30px;
-  p{
-    margin-bottom:10px;
-  }
-}
-
-.flasketekstboks{//tekstboken på flasken (i web)
-  background-color: $backgroundbrown;
-  padding: 15px;
-  p{
-    margin-bottom:10px;
-  }
-}
-
-.knapforside{//knapperne på forsiden
-  @include button;
-}
-
-.webflaske{
-  display: none;
-}
 
 // -----------------Christinas css------------------------
 
@@ -248,11 +179,6 @@ ul{
     display: none;
   }
 
-  .burgermenu{//for at neutralisere egenskaberne fra burgermenuen i mobil
-    position: static;
-    width: auto;
-    margin: auto;
-  }
   ul{
     list-style-type: none;
     flex-direction: row;
@@ -260,28 +186,19 @@ ul{
     justify-content: space-between;
     margin: 2% 5% 5% 5%;
     font-size: 12pt;
-    position: static;
     a{
       text-decoration: none;
       color: black;
-      background-color: #fff;
-      height: auto;
-      width: auto;
-      text-align: initial;
-      padding: 2px;
-      border: solid 2px #fff;
     }
     a:hover{
       border: solid 2px $backgroundbrown;
       padding: 2px;
-      color: #000;
     }
     .active{
-      border: solid 2px black;
-      padding: 2px;
+     border: solid 2px black;
+    padding: 2px;
     }
   }
-
  //------------------------------ header til tablet    
 
 
@@ -342,6 +259,18 @@ ul{
 
 
 
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -358,51 +287,6 @@ ul{
   }
 
   // -----------------Christinas css------------------------
-  .flexforside{
-    @include flex;
-    flex-direction: row;
-  }
-
-  .relativboks{//for at flasken ligger ovenpå
-    position: relative;
-  }
-
-  .absoluteboks{//for at flasken ligger ovenpå
-    position: absolute;
-    right: 0;
-  }
-  .forsideflaske{//flaskeillustration
-    max-height: 1300px;
-  }
-
-  .flasketekstboks{//teksten på flasken
-    margin: -700px 0 0 20px;
-    max-width: 260px;
-  }
-
-  .gaardsection{//sektionen med gårdbillede og tekst
-    margin-bottom: 190px;
-  }
-
-  .tekstboksforside{//tekstboksene på forsiden
-    p{
-      max-width: 500px;
-    }
-  }
-
-  .pagewrap{//for at centrere alt indhold
-    margin: auto;
-    max-width: 1280px;
-  }
-
-  .webflaske{//den store flaske vises i pc
-    display: block;
-  }
-  .mobilflaske{//for at det er den lille flaske der vises i tablet
-    display: none;
-  }
-
-  //989px høj
 
 
   // -----------------Christinas css------------------------
