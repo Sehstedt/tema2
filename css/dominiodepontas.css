@@ -36,16 +36,23 @@ img {
   padding: 5% 10%;
   width: 100%; }
 
-#search, #bars {
-  margin: 0 55% 5% 15%; }
+.searchelement, .barelement {
+  margin: 0 40% 5% 15%; }
 
 .elementer {
   display: flex;
   display: -webkit-flex;
   flex-direction: row; }
 
-#bars {
-  right: 0; }
+#inputsted {
+  display: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 2px solid rgba(150, 122, 108, 0.2);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 12pt; }
 
 .burgermenu {
   position: absolute;

@@ -53,12 +53,17 @@
         </div>
 
         <div class="elementer mobil">
-            <i class="fas fa-search fa-2x mobil" id="search"></i>
+
+            <div class="searchelement">
+                <i class="fas fa-search fa-2x mobil" id="search"></i>
+            </div>
+
             <div class="barelement mobil">
                 <i class="fas fa-bars fa-2x mobil" id="bars"></i>
             </div>
         </div>
 
+        <input type="text" placeholder="S&oslash;g her..." id="inputsted">
 
         <nav class="web burgermenu">
             <ul>
@@ -98,6 +103,10 @@
                     $(".burgermenu").css("display", "none");
                     navOpen = 0;
                 }
+            });
+
+            $(".searchelement").click(function(e){
+                $("#inputsted").slideToggle(500);
             });
 
         });
