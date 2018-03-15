@@ -121,6 +121,14 @@ button {
   margin: 2.5% 0 0 -80%;
   width: 100%; }
 
+#bottleInfoText {
+  font-size: 10pt;
+  z-index: 15;
+  position: fixed;
+  width: 30%;
+  height: 15%;
+  margin: 75% 40% 0 40%; }
+
 footer {
   background-color: rgba(150, 122, 108, 0.2);
   border-top: solid black 3px; }
@@ -215,6 +223,12 @@ footer {
   #bottleInfo {
     margin: 4% 0 0 -52.5%;
     width: 70%; }
+
+  #bottleInfoText {
+    font-size: 14pt;
+    width: 20%;
+    height: 30%;
+    margin: 61% 40% 0 40%; }
 
   footer {
     display: flex;
@@ -315,7 +329,13 @@ footer {
 
   #bottleInfo {
     margin: 4% 0 0 -52%;
-    width: 70%; } }
+    width: 70%; }
+
+  #bottleInfoText {
+    font-size: 18pt;
+    width: 18%;
+    height: 30%;
+    margin: 60% 42% 0 42%; } }
 @media screen and (min-width: 1050px) {
   #voresRaavarer {
     margin-bottom: 7%; }
@@ -352,13 +372,25 @@ footer {
 
   #bottleInfo {
     margin: 2.5% 0 0 -33.5%;
-    width: 50%; } }
+    width: 50%; }
+
+  #bottleInfoText {
+    font-size: 16pt;
+    width: 15%;
+    height: 30%;
+    margin: 42% 42.5% 0 42.5%; } }
 @media screen and (min-width: 1450px) {
   #druProGaa {
     margin: -3.5% 12% 0 12%; }
 
   #bottleInfo {
     margin: -6% 0 0 -33.5%;
-    width: 50%; } }
+    width: 50%; }
+
+  #bottleInfoText {
+    font-size: 18pt;
+    width: 15%;
+    height: 30%;
+    margin: 12% 42% 0 42%; } }
 
 /*# sourceMappingURL=dominiodepontas.css.map */
